@@ -1,0 +1,265 @@
+/* Base CSS */
+body {
+    background-color: #18181b;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #efeff1;
+    margin: 0;
+    padding: 0;
+}
+
+main h1 {
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #1f1f23;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h3,
+h4 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+    background-color: #3c3c43;
+    color: #ffffff;
+    border: 1px solid #5e5e64;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+ul,
+ol {
+    line-height: 2rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #9146ff;
+    outline: none;
+}
+
+input[type="submit"],
+button {
+    background-color: #9146ff;
+    border: none;
+    padding: 12px 18px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #772ce8;
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #323234;
+}
+
+table th {
+    background-color: #2d2d30;
+    color: #b9bbbe;
+}
+
+table td {
+    background-color: #1f1f23;
+    color: #ffffff;
+}
+
+.recipe-link {
+    color: #9146ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.recipe-link:hover {
+    color: #772ce8;
+    text-decoration: underline;
+}
+
+.btn-primary {
+    margin-top: 16px;
+    width: 13%;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #43a047;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:active {
+    background-color: #388e3c;
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.actions form {
+    display: inline-block;
+}
+
+.btn.red {
+    background-color: #ac1a1a;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn.red:hover {
+    background-color: #750c0c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn.red:active {
+    background-color: #c21515;
+    transform: translateY(0);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.details__ingredients ul,
+.details__instructions ol {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.details__ingredients li,
+.details__instructions li {
+    margin-bottom: 12px;
+}
+
+.details__ingredients,
+.details__instructions {
+    background-color: #2d2d30;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #772ce8;
+    transform: translateY(-2px);
+}
+
+.sidebar {
+    background-color: #1f1f23;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #9146ff;
+}
+
+.error {
+    background-color: rgb(235, 136, 136);
+    color: red;
+}
